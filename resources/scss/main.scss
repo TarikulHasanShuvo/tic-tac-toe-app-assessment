@@ -1,0 +1,17 @@
+// abstracts
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+// vendors
+@import 'vendors/bootstrap';
+@import 'vendors/fontawesome';
+
+// Layout
+@import "layouts/nav";
+
+//// components
+
+
+// pages
+@import "resources/scss/pages/_tic-tac-toe";
+

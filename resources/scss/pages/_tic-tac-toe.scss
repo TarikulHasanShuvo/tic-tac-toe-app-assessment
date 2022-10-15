@@ -1,0 +1,20 @@
+
+#tic-tac-toe{
+
+    .board-key{
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        line-height: 60px;
+        cursor: pointer;
+        margin: 5px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #ccc;
+        }
+    }
+}
