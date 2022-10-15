@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ConditionCheckingRequest;
 use App\Http\Requests\GameInfoRequest;
 use App\Http\Services\GameService;
 use App\Models\Game;
@@ -38,15 +39,15 @@ class GameController extends Controller
         return response()->json(['gameInfo' => $game], 200);
     }
 
+
     /**
-     * @param Request $request
+     * @param ConditionCheckingRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function checkingWinner(Request $request) : JsonResponse
+    public function checkingWinner(ConditionCheckingRequest $request) : JsonResponse
     {
         $conditionalArray = $this->gameService->makeConditionCheakingArray($request->board_length);
         $winner = $this->gameService->conditionChecking($conditionalArray, $request->board);
         return response()->json(['winner' => $winner], 200);
-
     }
 }

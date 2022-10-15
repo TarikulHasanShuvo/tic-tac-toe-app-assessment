@@ -41,7 +41,7 @@ export default {
             gameInfo: {
                 first_player_name: '',
                 second_player_name: '',
-                board_length: 0
+                board_length: ''
             },
         }
     },

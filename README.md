@@ -46,6 +46,11 @@
 
     npm install
 
+
 ### Start the local development server
 
     npm run dev
+
+### For Production server run
+
+    npm run build
